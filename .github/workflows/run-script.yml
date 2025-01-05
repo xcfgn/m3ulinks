@@ -25,10 +25,10 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run the script
-      run: python script.py  # Execute your Python script
+      run: python script.py
 
     - name: Upload channels.m3u
-      uses: actions/upload-artifact@v4  # Updated to v4
+      uses: actions/upload-artifact@v4
       with:
         name: channels-m3u
         path: channels.m3u
